@@ -1,0 +1,28 @@
+name: Feedback
+description: File a documentation issue
+title: "[Documentation] <title>"
+labels: [Feedback, Request, Bug]
+body:
+- type: textarea
+  attributes:
+    label: What information were you looking for in the documentation?
+    description: A description of the problem you were trying to solve and where you tried to find relevant information.
+- type: checkboxes
+  attributes:
+    label: Did you find the information?
+    description: Did you find what you were looking for? 
+    options:
+    - label: No - It isn't documented.
+    - label: Yes - But it isn't helpful.
+    - label: Yes - But it needs some changes/updates/other feedback.
+- type: textarea
+  attributes:
+    label: What feedback or suggestions do you have?
+    description: How can we resolve this issue in the documentation?
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
